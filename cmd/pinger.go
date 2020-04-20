@@ -46,7 +46,7 @@ to quickly create a Cobra application.`,
 				log.Printf("Ping %s (%s): %s\n", addr, dst, err)
 				return
 			}
-			log.Printf("Ping %s (%s): %s\n", addr, dst, dur)
+			log.Printf("Ping %s (%s): RTT : %s\n", addr, dst, dur)
 		}
 		for{
 			p(args[0])
@@ -61,11 +61,11 @@ const (
     // Stolen from https://godoc.org/golang.org/x/net/internal/iana,
     // can't import "internal" packages
     ProtocolICMP = 1
-    //ProtocolIPv6ICMP = 58
+    ProtocolIPv6ICMP = 58
 )
 
 func PingUtility(addr string)  (*net.IPAddr, time.Duration, error) {
-	fmt.Println(`PingUtility`)
+	fmt.Println("\n")
 	// Start listening for icmp replies
     c, err := icmp.ListenPacket("ip4:icmp", ListenAddr)
     if err != nil {
