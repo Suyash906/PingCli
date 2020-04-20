@@ -1,3 +1,12 @@
+### Packages Used
+```
+    1. github.com/spf13/cobra
+    2. github.com/mitchellh/go-homedir
+    3. github.com/spf13/viper
+    4. golang.org/x/net/icmp
+    5. golang.org/x/net/ipv4
+```
+
 ### Use command like this
 ```
     1. go run main.go pinger mail.google.com
@@ -13,4 +22,4 @@
 ```
 
 ### Refernece
-1. https://gist.github.com/lmas/c13d1c9de3b2224f9c26435eb56e6ef3
+1. https://github.com/golang/net/tree/d3edc9973b7eb1fb302b0ff2c62357091cea9a30/icmp
