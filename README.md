@@ -1,6 +1,3 @@
-# PingCli
-CLI app to send ICMP packet to hostname
-
 ### Use command like this
 ```
     1. go run main.go pinger mail.google.com
